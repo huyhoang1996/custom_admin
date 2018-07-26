@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls>
+    <track kind="subtitles" label="English" src="{{STATIC_URL}}assets/mapping_audio.vtt" srclang="en" default/>
+    <source src="{{STATIC_URL}}assets/test.ogg" type="audio/ogg" />
+    <source src="{{STATIC_URL}}assets/test.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+
+<video controls autoplay src="{{STATIC_URL}}assets/test.mp3">
+   <track default src="{{STATIC_URL}}assets/mapping_audio.vtt">
+  </video>
+
+
+<h2>Sync Text With Audio</h2>
+
+<!-- <audio id="audiofile" src="{{STATIC_URL}}assets/test.mp3" controls></audio><br>
+        <div id="subtitles"></div>
+        <script>
+        ( function(win, doc) {
+            var audioPlayer = doc.getElementById("audiofile");
+            var subtitles = doc.getElementById("subtitles");
+            var syncData = [
+                  { "end": "0.000","start": "0.000","text": "All" },
+                  {"end": "0.000","start": "0.000","text": "Is" },
+                  {"end": "0.280","start": "0.000","text": "SAID" },
+                  {"end": "1.120","start": "0.280","text": "WITHOUT" },
+                  {"end": "1.400","start": "1.120","text": "A" },
+                  {"end": "2.120","start": "1.400","text": "WORD" }
+                ];
+            createSubtitle();
+
+            function createSubtitle()
+            {
+                var element;
+                for (var i = 0; i < syncData.length; i++) {
+                    element = doc.createElement('span');
+                    element.setAttribute("id", "c_" + i);
+                    element.innerText = syncData[i].text + " ";
+                    subtitles.appendChild(element);
+                }
+            }
+
+            audioPlayer.addEventListener("timeupdate", function(e){
+                syncData.forEach(function(element, index, array){
+                    if( audioPlayer.currentTime >= element.start && audioPlayer.currentTime <= element.end )
+                        subtitles.children[index].style.background = 'yellow';
+                });
+            });
+        }(window, document));
+        </script>
+ -->
+
+ <audio id="audiofile" src="{{STATIC_URL}}assets/cmnm.mp3" controls></audio><br>
+        <div id="subtitles"></div>
+        <script>
+        ( function(win, doc) {
+            var audioPlayer = doc.getElementById("audiofile");
+            var subtitles = doc.getElementById("subtitles");
+            var syncData = [
+                  { "end": "1.800","start": "0.000","text": "Chúc Mừng." },
+                  {"end": "3.480","start": "1.800","text": "Năm" },
+                  {"end": "4.680","start": "3.480","text": "Mới." }
+                ];
+            createSubtitle();
+
+            function createSubtitle()
+            {
+                var element;
+                for (var i = 0; i < syncData.length; i++) {
+                    element = doc.createElement('span');
+                    element.setAttribute("id", "c_" + i);
+                    element.innerText = syncData[i].text + " ";
+                    subtitles.appendChild(element);
+                }
+            }
+
+            audioPlayer.addEventListener("timeupdate", function(e){
+                syncData.forEach(function(element, index, array){
+                    if( audioPlayer.currentTime >= element.start && audioPlayer.currentTime <= element.end )
+                        subtitles.children[index].style.background = 'yellow';
+                });
+            });
+        }(window, document));
+        </script>
+
+
+</body>
+</html>
+
+

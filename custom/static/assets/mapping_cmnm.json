@@ -1,0 +1,44 @@
+{
+ "fragments": [
+  {
+   "begin": "0.000", 
+   "children": [], 
+   "end": "1.560", 
+   "id": "f000001", 
+   "language": "vie", 
+   "lines": [
+    "ch\u00fac"
+   ]
+  }, 
+  {
+   "begin": "1.560", 
+   "children": [], 
+   "end": "2.120", 
+   "id": "f000002", 
+   "language": "vie", 
+   "lines": [
+    "m\u1eebng"
+   ]
+  }, 
+  {
+   "begin": "2.120", 
+   "children": [], 
+   "end": "3.480", 
+   "id": "f000003", 
+   "language": "vie", 
+   "lines": [
+    "n\u0103m"
+   ]
+  }, 
+  {
+   "begin": "3.480", 
+   "children": [], 
+   "end": "4.680", 
+   "id": "f000004", 
+   "language": "vie", 
+   "lines": [
+    "m\u1edbi"
+   ]
+  }
+ ]
+}
